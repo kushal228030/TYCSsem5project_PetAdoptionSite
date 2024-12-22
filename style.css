@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f9;
+  line-height: 1.6;
+  font-size: 16px; /* Base font size */
+}
+
+/* Navbar */
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #e09f3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  /* position: fixed; */
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav .logo p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  padding: 0 10px;
+}
+
+nav ul a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #ffd166;
+}
+
+.nav-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-container .dropdown img {
+  cursor: pointer;
+}
+
+/* Dropdown */
+.nav-container .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0; /* Change from left to right */
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+
+.nav-container .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.nav-container .dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hero Section */
+.theme {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  animation: change 15s linear infinite;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 0 2rem;
+}
+
+@keyframes change {
+  0% {
+    background-image: url('images/pet_theme.jpg');
+  }
+  25% {
+    background-image: url('images/theme2.jpg');
+  }
+  50% {
+    background-image: url('images/theme3.jpg');
+  }
+  100% {
+    background-image: url('images/theme4.jpg');
+  }
+}
+
+.thought {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding-top: 40vh; /* Adjusted padding */
+}
+
+.btn_adopt {
+  font-size: medium;
+  background-color: rgb(248, 77, 77);
+  color: white;
+  width: 230px;
+  height: 42px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover transitions */
+}
+
+.btn_adopt:hover {
+  transform: scale(1.1);
+  background-color: #ff4d4d;
+  opacity: 0.9;
+}
+
+/* Steps Section */
+.Ab {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+/* Layout for the question section with image and steps */
+/* Layout for the question section with image and steps */
+.questions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.questions img {
+  width: 40%; /* Image takes 40% of the parent container */
+  height: auto;
+  margin-right: 20px;
+  object-fit: contain; /* Ensures the entire image fits */
+}
+
+.steps-container {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.ss {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.ss img {
+  width: 50px; /* Adjust icon size */
+  height: 50px;
+  margin-right: 20px;
+}
+
+.sub_ss {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_ss h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.sub_ss p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .questions {
+    flex-direction: column;
+    align-items: center; /* Centers content */
+  }
+
+  .questions img {
+    width: 80%; /* Image takes 80% of the width in mobile view */
+    margin-bottom: 20px;
+    object-fit: contain; /* Ensures the whole image fits in the box */
+  }
+
+  .steps-container {
+    width: 100%; /* Steps container takes full width */
+  }
+
+  .ss {
+    margin-bottom: 15px; /* Less margin between steps in mobile */
+  }
+
+  .ss img {
+    width: 40px; /* Adjust the icon size for smaller screens */
+    height: 40px;
+  }
+
+  .sub_ss h3 {
+    font-size: 1.3rem;
+  }
+
+  .sub_ss p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Summary/Details */
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+  list-style: none;
+}
+
+details[open] summary {
+  color: #e09f3e;
+}
+
+details {
+  margin-top: 10px;
+  padding: 10px;
+  border-left: 4px solid #e09f3e;
+  background-color: #f9f9f9;
+}
+
+details p {
+  font-size: 1.1rem;
+  color: #555;
+  padding: 5px;
+}
+
+/* How it Works Section */
+.how {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.how h1 {
+  font-size: 2.5rem;
+  color: #0c0d0f;
+  margin-bottom: 20px;
+}
+
+.how p {
+  font-size: 1.1rem;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #e09f3e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+footer p, footer a {
+  color: white;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+footer img {
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.2s;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

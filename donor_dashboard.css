@@ -1,0 +1,135 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Details Section */
+.details {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.details img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.details p {
+    margin-bottom: 10px;
+}
+
+.details p strong {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+
+/* Application Card */
+.application-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.application-card h3 {
+    margin-bottom: 15px;
+}
+
+.application-card p {
+    margin-bottom: 10px;
+}
+
+.application-card p strong {
+    display: inline-block;
+    width: 200px;
+    font-weight: bold;
+}
+
+.application-card form {
+    margin-top: 20px;
+}
+
+.application-card button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.application-card button:hover {
+    background-color: #45a049;
+}
+
+.application-card button:last-child {
+    background-color: #f44336;
+}
+
+.application-card button:last-child:hover {
+    background-color: #d32f2f;
+}

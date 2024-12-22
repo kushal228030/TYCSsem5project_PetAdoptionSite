@@ -1,0 +1,97 @@
+/* Header styles */
+header {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+
+/* Main content area styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
+
+/* Section styles */
+section {
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+    text-align: left;
+}
+
+/* Unordered list styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+
+/* Adding bullet style */
+li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #555;
+}
+/* Footer styles */
+footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #eee;
+    margin-top: auto;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social media icon styles */
+footer span a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}

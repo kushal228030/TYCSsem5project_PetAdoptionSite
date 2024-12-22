@@ -1,0 +1,104 @@
+/* General Styles */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pet Details Section */
+.details {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+    align-items: center; /* Center content */
+}
+
+.details img {
+    max-width:30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 16px;
+    width: 100%;
+    margin-left: 10vb; /* Ensure full width */
+    text-align: left; /* Align text to the left */
+}
+
+.details p strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Button Actions */
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.actions .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.actions .btn:hover {
+    background-color: #45a049;
+}
+
+/* Back to Dashboard button */
+a.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-left: 30px;
+    background-color: #f04e4e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #d84141;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .details {
+        flex-direction: column; /* Keep items stacked vertically */
+        text-align: center;
+    }
+
+    .details img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

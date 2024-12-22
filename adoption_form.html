@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Adoption Form</title>
+  <link rel="stylesheet" href="login_style.css">
+  <script src="indexscript.js" defer></script>
+</head>
+<body>
+  <h1>Pet Adoption Application</h1>
+  <form action="adoption_forn.php" method="post" onsubmit="return adoption_validateForm();">
+    <div class="form_section">
+      <h2>Applicant Information</h2>
+      <label for="lblName">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Contact no::</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="pass" required minlength="8">
+      
+      <label for="conPass">Confirm Password:</label>
+      <input type="password" id="conPass" name="conPass" required minlength="8">
+    </div>
+    
+    <div class="form_section">
+      <h2>Household Information</h2>
+      <label for="household_members">Number of people in household:</label>
+      <input type="number" id="household_members" name="household_members" required min="1">
+      
+      <label for="housing">Housing situation:</label>
+      <select id="housing" name="housing" required>
+        <option value="">Select...</option>
+        <option value="rent">Renting</option>
+        <option value="own">Own</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form_section">
+      <h2>Pet Preferences</h2>
+      <label for="pet_type">Preferred pet type:</label>
+      <select id="pet_type" name="typeOfPet" required>
+        <option value="">Select...</option>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+        <option value="other">Other</option>
+      </select>
+      
+      <!-- <label for="pet_age">Preferred pet age:</label>
+      <input type="number" id="pet_age" name="pet_age" placeholder="e.g., 2 (years)"> -->
+    </div>
+    
+    <input type="submit" value="Submit Application">
+    
+    <p>Wants to Donate a Pet? <a href="donate_form.html"><b>Sign Up as a donor</b></a></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: whitesmoke;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,50,0.8),rgb(0,0,50,0.8)), url("images/pet_theme.jpg");
+}
+.heading{
+    color: indigo;
+    padding-top: 20px;
+    padding-left: 16vh;
+}
+.login{
+    border-radius: 12px;
+    height: 95vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 60vh;
+   background-color:white;
+   animation: scaleUp 0.5s ease-out;
+}
+.login .container_img img{
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 120px;
+}
+.login .container_img{
+    padding-left: 20vb;
+    padding-top: 20px;
+}
+.login .container_img img:hover{
+    scale: 1.1;
+}
+.login .form_element{
+    align-items: center;
+    justify-content: center;
+   padding-top: 15px;
+   display: flex;
+   font-size: large;
+   padding-bottom: 10px;
+   color: indigo;
+}
+.login .form_inp{
+    display: flex;
+}
+.login .form_inp input{
+    align-items: center;
+    align-content: center;
+    width: 50vb;
+   height: 30px;
+   display: flex;
+  }
+.login .form_inp input:focus{
+    color: indigo;
+}
+
+.login .form_inp img{
+    height: 20px;
+    padding-left: 15px;
+    padding-right: 12px;
+   
+}
+.login .form_element button{
+    height: 35px;
+    width:70px;
+    background-color:indigo;
+    border-radius: 6px;
+    color:white;
+    cursor: pointer;
+}
+.login .form_element button:hover{
+    scale: 1.1;
+    opacity: 0.9;
+}
+@keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

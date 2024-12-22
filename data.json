@@ -1,0 +1,352 @@
+{
+  "pets_by_breed": {
+    "Labrador": [
+      {
+        "name": "Kallu",
+        "age": 10,
+        "gender": "Male",
+        "allergies": "None",
+        "image": "https://cdn.britannica.com/82/232782-050-8062ACFA/Black-labrador-retriever-dog.jpg",
+        "vaccination": "Completed",
+        "vet_details": {
+          "name": "Dr. John Doe",
+          "contact": "+1234567890"
+        },
+        "user_contact": "+1987654321",
+        "user_email": "kallu.owner@example.com",
+        "location": "New York, NY"
+      },
+      {
+        "name": "Max",
+        "age": 2,
+        "gender": "Male",
+        "allergies": "None",
+        "image": "https://www.thelabradorsite.com/wp-content/uploads/2017/07/When-Do-Dogs-Stop-Growing-LS-long.jpg",
+        "vaccination": "Completed",
+        "vet_details": {
+          "name": "Dr. Jane Smith",
+          "contact": "+0987654321"
+        },
+        "user_contact": "+1987654322",
+        "user_email": "max.owner@example.com",
+        "location": "San Francisco, CA"
+      },
+      {
+        "name": "Luna",
+        "age": 5,
+        "gender": "Female",
+        "allergies": "None",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTznjkCkKzbiCP-OxAWJTzeHKmNbeTQQYLlA&usqp=CAU",
+        "vaccination": "Not Completed",
+        "vet_details": {
+          "name": "Dr. Emma Brown",
+          "contact": "+1122334455"
+        },
+        "user_contact": "+1987654323",
+        "user_email": "luna.owner@example.com",
+        "location": "Chicago, IL"
+      },
+      {
+        "name": "Luna",
+        "age": 5,
+        "gender": "Female",
+        "allergies": "None",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTznjkCkKzbiCP-OxAWJTzeHKmNbeTQQYLlA&usqp=CAU",
+        "vaccination": "Not Completed",
+        "vet_details": {
+          "name": "Dr. Emma Brown",
+          "contact": "+1122334455"
+        },
+        "user_contact": "+1987654324",
+        "user_email": "luna2.owner@example.com",
+        "location": "Los Angeles, CA"
+      }
+    ],
+    "Bull Dog": {
+      "id": 2,
+      "pets": [
+        {
+          "name": "Bruno",
+          "age": 4,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1559071277-332eac3e2db4",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654325",
+          "user_email": "bruno.owner@example.com",
+          "location": "Miami, FL"
+        },
+        {
+          "name": "Bella",
+          "age": 6,
+          "gender": "Female",
+          "allergies": "Peanut",
+          "image": "https://images.unsplash.com/photo-1583511655624-eec70d3f61ca",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. Jane Smith",
+            "contact": "+0987654321"
+          },
+          "user_contact": "+1987654326",
+          "user_email": "bella.owner@example.com",
+          "location": "Houston, TX"
+        }
+      ]
+    },
+    "Pit Bull": {
+      "id": 3,
+      "pets": [
+        {
+          "name": "Rocky",
+          "age": 3,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1580327331326-59d230bba5f7",
+          "vaccination": "Not Completed",
+          "vet_details": {
+            "name": "Dr. Emma Brown",
+            "contact": "+1122334455"
+          },
+          "user_contact": "+1987654327",
+          "user_email": "rocky.owner@example.com",
+          "location": "Philadelphia, PA"
+        },
+        {
+          "name": "Daisy",
+          "age": 5,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1578103405763-e0d03f93104c",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654328",
+          "user_email": "daisy.owner@example.com",
+          "location": "Phoenix, AZ"
+        }
+      ]
+    },
+    "Persian": {
+      "id": 4,
+      "pets": [
+        {
+          "name": "Snow",
+          "age": 2,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. Jane Smith",
+            "contact": "+0987654321"
+          },
+          "user_contact": "+1987654329",
+          "user_email": "snow.owner@example.com",
+          "location": "San Diego, CA"
+        },
+        {
+          "name": "Fluffy",
+          "age": 3,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1577801599447-0e1741a29858",
+          "vaccination": "Not Completed",
+          "vet_details": {
+            "name": "Dr. Emma Brown",
+            "contact": "+1122334455"
+          },
+          "user_contact": "+1987654330",
+          "user_email": "fluffy.owner@example.com",
+          "location": "Dallas, TX"
+        }
+      ]
+    },
+    "British Short Haired": {
+      "id": 5,
+      "pets": [
+        {
+          "name": "Milo",
+          "age": 4,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1592194996308-7f0bdd8261e8",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654331",
+          "user_email": "milo.owner@example.com",
+          "location": "Austin, TX"
+        },
+        {
+          "name": "Lily",
+          "age": 3,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1547478347-45131c041795",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. Jane Smith",
+            "contact": "+0987654321"
+          },
+          "user_contact": "+1987654332",
+          "user_email": "lily.owner@example.com",
+          "location": "Columbus, OH"
+        }
+      ]
+    },
+    "Bengal": {
+      "id": 6,
+      "pets": [
+        {
+          "name": "Simba",
+          "age": 2,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1560807707-8cc77767d783",
+          "vaccination": "Not Completed",
+          "vet_details": {
+            "name": "Dr. Emma Brown",
+            "contact": "+1122334455"
+          },
+          "user_contact": "+1987654333",
+          "user_email": "simba.owner@example.com",
+          "location": "Fort Worth, TX"
+        },
+        {
+          "name": "Nala",
+          "age": 3,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1543852786-1cf6624b9987",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654334",
+          "user_email": "nala.owner@example.com",
+          "location": "Charlotte, NC"
+        }
+      ]
+    },
+    "Fish": {
+      "id": 7,
+      "pets": [
+        {
+          "name": "Goldie",
+          "species": "Goldfish",
+          "age": 1,
+          "gender": "Unknown",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1599827286882-73b2d183d5b0",
+          "vaccination": "Not Applicable",
+          "vet_details": {
+            "name": "Dr. Jane Smith",
+            "contact": "+0987654321"
+          },
+          "user_contact": "+1987654335",
+          "user_email": "goldie.owner@example.com",
+          "location": "Detroit, MI"
+        },
+        {
+          "name": "Bubbles",
+          "species": "Betta",
+          "age": 1,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1616774614431-1b61c6b4dd0e",
+          "vaccination": "Not Applicable",
+          "vet_details": {
+            "name": "Dr. Emma Brown",
+            "contact": "+1122334455"
+          },
+          "user_contact": "+1987654336",
+          "user_email": "bubbles.owner@example.com",
+          "location": "Memphis, TN"
+        }
+      ]
+    },
+    "Birds": {
+      "id": 8,
+      "pets": [
+        {
+          "name": "Kiwi",
+          "species": "Parrot",
+          "age": 2,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1562184555-fb372198e779",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654337",
+          "user_email": "kiwi.owner@example.com",
+          "location": "Baltimore, MD"
+        },
+        {
+          "name": "Tweety",
+          "species": "Canary",
+          "age": 3,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. Jane Smith",
+            "contact": "+0987654321"
+          },
+          "user_contact": "+1987654338",
+          "user_email": "tweety.owner@example.com",
+          "location": "Milwaukee, WI"
+        }
+      ]
+    },
+    "Rats": {
+      "id": 9,
+      "pets": [
+        {
+          "name": "Scabbers",
+          "species": "Fancy Rat",
+          "age": 1,
+          "gender": "Male",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1586201375761-83865001c4a9",
+          "vaccination": "Not Completed",
+          "vet_details": {
+            "name": "Dr. Emma Brown",
+            "contact": "+1122334455"
+          },
+          "user_contact": "+1987654339",
+          "user_email": "scabbers.owner@example.com",
+          "location": "Albuquerque, NM"
+        },
+        {
+          "name": "Whiskers",
+          "species": "Fancy Rat",
+          "age": 1,
+          "gender": "Female",
+          "allergies": "None",
+          "image": "https://images.unsplash.com/photo-1574158621642-15ad7c9a8f60",
+          "vaccination": "Completed",
+          "vet_details": {
+            "name": "Dr. John Doe",
+            "contact": "+1234567890"
+          },
+          "user_contact": "+1987654340",
+          "user_email": "whiskers.owner@example.com",
+          "location": "Kansas City, MO"
+        }
+      ]
+    }
+  }
+}

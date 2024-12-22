@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donating Pet</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+<body>
+    <div class="form-container" >
+        <h1>Pet Donation Application</h1>
+        <form action="donation_form.php" method="POST" enctype="multipart/form-data">
+            <!-- Donor Information -->
+            <h2>Applicant Information</h2>
+            <div class="form_section">
+                <label for="donorName">Name:</label>
+                <input type="text" id="donorName" name="donorName" required>
+            </div>
+            
+            <div class="form_section">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <!-- Add pattern for UK phone number format -->
+                <input type="tel" id="phone" name="phone" pattern="^\+?(\d{1,3})?[-.●]?\d{1,4}?[-.●]?\d{1,4}[-.●]?\d{1,9}$" required>
+            </div>
+            
+            <div class="form_section">
+                <label for="lblPass">Password:</label>
+                <!-- Password with minimum length and character requirements -->
+                <input type="password" id="pass" name="pass" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">
+                <label for="lblConPass">Confirm Password:</label>
+                <input type="password" id="conPass" name="conPass" required>
+            </div>
+
+            <div class="form_section">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+
+            <!-- Pet Information -->
+            <h2>Pet Information</h2>
+            <div class="form_section">
+                <label for="petName">Pet Name:</label>
+                <input type="text" id="petName" name="petName" required>
+            </div>
+
+            <div class="form_section">
+                <label for="pet_species">Species:</label>
+                <select id="pet_species" name="pet_species" onchange="updateBreedOptions()" required>
+                    <option value="">Select Species</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+
+            <div class="form_section">
+                <label for="breed">Breed:</label>
+                <select id="breed" name="breed" required>
+                    <!-- Populate dynamically or with default options -->
+                </select>
+            </div>
+
+            <div class="form_section">
+                <label for="age">Age (years):</label>
+                <input type="number" id="age" name="age" min="0" max="25" required>
+            </div>
+
+            <div class="form_section">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
+
+            <!-- Medical Information -->
+            <h2>Reason for Donation</h2>
+            <div class="form_section">
+                <label for="reason">Why are you donating the pet?</label>
+                <input type="text" id="reason" name="reason" required>
+            </div>
+
+            <div class="form_section">
+                <label for="vaccination">Vaccination Status:</label>
+                <select id="vaccination" name="vaccination" onchange="showLastVaccinationDate()" required>
+                    <option value="">Select Vaccination Status</option>
+                    <option value="completed">Completed</option>
+                    <option value="not_completed">Not Completed</option>
+                </select>
+            </div>
+
+            <!-- Last Vaccination Date (hidden initially) -->
+            <div class="form_section" id="lastVaccinationDateDiv" style="display: none;">
+                <label for="lastVaccinationDate">Last Vaccination Date:</label>
+                <input type="date" id="lastVaccinationDate" name="lastVaccinationDate">
+            </div>
+
+            <div class="form_section">
+                <label for="additionalInfo">Additional Information (Allergies, Habits):</label>
+                <input type="text" id="additionalInfo" name="additionalInfo" required>
+            </div>
+
+            <div class="form_section">
+                <label for="lblPet_pic">Upload a pet pic:</label>
+                <input type="file" id="pet_pic" name="pet_pic" accept="image/jpeg, image/png,image/jpg" required>
+            </div>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Donate Pet">
+        </form>
+    </div>
+    <script src="indexscript.js"></script>
+</body>
+</html>
